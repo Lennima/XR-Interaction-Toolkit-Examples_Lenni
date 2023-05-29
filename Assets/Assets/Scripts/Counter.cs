@@ -20,6 +20,14 @@ namespace CodeDemo.CounterMid
 
             //numberDisplay.DisplayText(counter.ToString());
             OnNewAmmount?.Invoke(counter);
+
+            if (counter == 10)
+            {
+                if (GameManager.Instance.CurrentState != GameManager.GameStates.GameOver)
+                {
+                    GameManager.Instance.SwitchGameState(GameManager.GameStates.GameOver);
+                }
+            }
         }
     }
 }
