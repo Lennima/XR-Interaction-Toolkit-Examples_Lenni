@@ -2277,6 +2277,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 29304935546587040, guid: 4e660da2419d1614198b2c073ddf863d,
+        type: 3}
+      propertyPath: m_EnableComfortMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3346848182839670810, guid: 4e660da2419d1614198b2c073ddf863d,
         type: 3}
       propertyPath: m_TrackingStateInput.m_Action.m_Id
