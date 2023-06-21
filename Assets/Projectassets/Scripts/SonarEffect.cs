@@ -11,10 +11,15 @@ public class SonarEffect: MonoBehaviour
     float currentT;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         transform.localScale = new Vector3(minScale, minScale, minScale);
+        currentT = 0;
         StartCoroutine(ScaleObject());
+    }
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
 
     IEnumerator ScaleObject()
